@@ -296,7 +296,7 @@ I learned:
 * Basic understanding Javascript and nodejs
 * Request/express apps
 * npm
-* JSON strings and obbjets
+* JSON strings and objects
 * MySQL, creating database, queries, tables, nodejs MySQL syntax
 * Heroku
 * HTML/CSS
