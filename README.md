@@ -5,17 +5,18 @@ Created by Alex Garcia.
 <img src="https://asg017.github.io/Projects/TritonFind/pics/tritonfind-scan.png" alt="TritonFind Messenger Scan Code" width="500">
 
 ##Table of Contents
-- [Introduction](##Introduction)
-- [Functionality](##Functionality)
-- [MySQL Layout](##MySQL Layout)
-- [Making Messenger Bot](##Making Messenger Bot)
-- [Security](##Security)
-- [Known Issues](##Known Issues)
-- [To-do](##To-do)
-- [Future Ideas](##Future Ideas)
-- [Why I Made TritonFind](##Why I Made TritonFind)
-- [Contributions](##Contributions)
-- [Credits](##Credits)
+*BTW, the Table of Content links below may not work.* 
+- [Introduction](#Introduction)
+- [Functionality](#Functionality)
+- [MySQL Layout](#MySQL Layout)
+- [Making a Messenger Bot](#Making a Messenger Bot)
+- [Security](#Security)
+- [Known Issues](#Known Issues)
+- [To-do](#To-do)
+- [Future Ideas](#Future Ideas)
+- [Why I Made TritonFind](#Why I Made TritonFind)
+- [Contributions](#Contributions)
+- [Credits](#Credits)
 
 ##Introduction
 
@@ -86,7 +87,7 @@ mediumInt|varchar(255)|varchar(20)|mediumInt
 reportKey|Reporter|Reportee|TimeStamp|Message|Result
 ---|---|---|---|---|---|
 mediumint|mediumint|mediumint|bigint|varchar(500)|char(1)
-1||3|1|12381249123|They asked for personal information.|B
+1|3|1|12381249123|They asked for personal information.|B
 
 
 ##Making a Messenger Bot
@@ -250,6 +251,8 @@ will have in the near future:
 <br>Request to speak to admin, turn off bot functionality for that specific user until their requests are fulfilled.
 * __La Jolla Weather__
 <br>Daily updates to La Jolla/UCSD weather, in morning or night.
+* __More Conversation__
+<br>Use api.ai  or another service to make TritonFind more conversation, opposed to regex.
 * __Triton Alert Emergency Notifications__
 <br>Be able to send all subscribed users information about Emergency Alerts put out by UCSD.
 * __UCSD Textbook Lookup__ 
@@ -297,6 +300,7 @@ I learned:
 * Request/express apps
 * npm
 * JSON strings and objects
+* RegEx
 * MySQL, creating database, queries, tables, nodejs MySQL syntax
 * Heroku
 * HTML/CSS
