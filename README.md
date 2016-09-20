@@ -2,7 +2,11 @@
 A Messenger Bot that assists UC San Diego students in getting their lost items back.
 Created by Alex Garcia.
 
+To learn more, please visit the [TritonFind website](https://asg017.github.io/Projects/TritonFind/index.html).
+
 <img src="https://asg017.github.io/Projects/TritonFind/pics/tritonfind-scan.png" alt="TritonFind Messenger Scan Code" width="500">
+
+
 
 ##Table of Contents
 *BTW, the Table of Content links below may not work.* 
@@ -17,6 +21,8 @@ Created by Alex Garcia.
 - [Why I Made TritonFind](#Why I Made TritonFind)
 - [Contributions](#Contributions)
 - [Credits](#Credits)
+
+
 
 ##Introduction
 
@@ -40,6 +46,8 @@ Here is the [Privacy Policy](https://asg017.github.io/Projects/TritonFind/privac
 [FAQ's](https://asg017.github.io/Projects/TritonFind/FAQ.html), and 
 [Security Details](https://asg017.github.io/Projects/TritonFind/barcodeSafety.html) for TritonFind. 
 
+
+
 ##Functionality
 
 This is what TritonFind can do:
@@ -57,10 +65,17 @@ This is what TritonFind can do:
 
 This is how the source code flows:
 TODO Add diagrams fo how modules interact with each other
-1. Facebook makes a POST request to the TritonFind webhook. (index.js)
-2. TritonFind grabs the user's data from the MySQL database. (modules/reply.js - > modules/sql.js)
-3. Based on the message context or the user's state, TritonFind will compile an array of messages to send. (modules/\* and modules/handlers/*)
+1. Facebook makes a POST request to the TritonFind webhook. (`index.js`)
+2. TritonFind grabs the user's data from the MySQL database. (`modules/reply.js` - > `modules/sql.js`)
+3. Based on the message context or the user's state, TritonFind will compile an array of messages to send. (`modules`/\* and `modules/handlers/`*)
 4. TritonFind sends all those messages. 
+
+###Barcode Scanning
+
+TritonFind scans all pictures sent with the [zxing service](zxing.org). TritonFind uses the request/cheerio npm packages
+to get and parse the barcode data. Feel free to use `modules/barcode.js` for your projects. Please be nice and don't 
+spam the service, keep limits in mind.
+
 
 
 ##MySQL Layout
@@ -88,6 +103,7 @@ reportKey|Reporter|Reportee|TimeStamp|Message|Result
 ---|---|---|---|---|---|
 mediumint|mediumint|mediumint|bigint|varchar(500)|char(1)
 1|3|1|12381249123|They asked for personal information.|B
+
 
 
 ##Making a Messenger Bot
@@ -218,6 +234,7 @@ TritonFind has done specifically for UCSD barcode information, check out the [Tr
 Security Page](https://asg017.github.io/Projects/TritonFind/barcodeSafety.html).
 
 
+
 ##Known Issues
 * Tests
 <br/>
@@ -232,6 +249,7 @@ API access error, TritonFind may not respond. This is terrible for bots, so
 more/better error handling should be implemented.
 
 
+
 ##To-do
 * More and better in-file documentation.
 * Better code design everywhere, make more folders with handlers (e.g. payloadHandler folder, convoHandler folder, etc.)
@@ -240,6 +258,8 @@ more/better error handling should be implemented.
 * Make sure that TritonFind doesn't "time out" during delay messages, since itneeds to send 200 status code within 20 seconds.
 * Split long messages between users in a conversation into small chunks. Right now, cuts off messages at 320 chars (Messenger API limit), instead send all as seperate messages ( (1/3), (2/3), etc.). 
 * Do a quick check on "raw" input in scanning ID's, make sure its 14 digits, starts with 21822, etc.
+
+
 
 ##Future Ideas
 Here's an incomplete of different feature/functionalities that I hope TritonFind
@@ -261,6 +281,8 @@ will have in the near future:
 <br>Show users what's on the menu for all dining halls on campus, notifcation if certain items are being served.
 * __CSO Escort/CAPS/Campus Police__
 <br>Ability to call for a CSO escort, CAPS services, or Campus Police, all in Messenger.
+
+
 
 ##Why I Made TritonFind
 
@@ -315,6 +337,8 @@ TritonFind is always open for ideas and suggestions, especially with security an
 functionality improvements! Feel free to open an issue
 on github, or email me / message me on Facebook.
 
+
+
 ##Credits
 
 I made/maintain TritonFind, and am the sole admin (for now). Here is a list
@@ -329,4 +353,3 @@ of people who helped me test TritonFind:
 7. Sai Samudrala (friend)
 8. Tad Tiri (no idea who this guy is)
 9. About a dozen other people who tested it out during a soft opening
-
