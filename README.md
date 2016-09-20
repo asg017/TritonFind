@@ -5,17 +5,17 @@ Created by Alex Garcia.
 <img src="https://asg017.github.io/Projects/TritonFind/pics/tritonfind-scan.png" alt="TritonFind Messenger Scan Code" width="500">
 
 ##Table of Contents
-- [Introduction](#Introduction)
-- [Functionality](#Functionality)
-- [MySQL Layout](#MySQL Layout)
-- [Making Messenger Bot](#Making Messenger Bot)
-- [Security](#Security)
-- [Known Issues](#Known Issues)
-- [To-do](#To-do)
-- [Future Ideas](#Future Ideas)
-- [Why I Made TritonFind](#Why I Made TritonFind)
-- [Contributions](#Contributions)
-- [Credits](#Credits)
+- [Introduction](##Introduction)
+- [Functionality](##Functionality)
+- [MySQL Layout](##MySQL Layout)
+- [Making Messenger Bot](##Making Messenger Bot)
+- [Security](##Security)
+- [Known Issues](##Known Issues)
+- [To-do](##To-do)
+- [Future Ideas](##Future Ideas)
+- [Why I Made TritonFind](##Why I Made TritonFind)
+- [Contributions](##Contributions)
+- [Credits](##Credits)
 
 ##Introduction
 
