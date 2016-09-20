@@ -32,7 +32,7 @@ decide how to get the ID back to the person.
 
 Here is an example of a user scanning an ID with TritonFind, and connecting with the owner:
 
-<img src="https://asg017.github.io/Projects/TritonFind/pics/tritonfind-scan-example-2.gif" alt="TritonFind scanning ID example">
+<img src="https://asg017.github.io/Projects/TritonFind/pics/tritonfind-scan-example-3.gif" alt="TritonFind scanning ID example">
 
 Here is the [Privacy Policy](https://asg017.github.io/Projects/TritonFind/privacy.html), 
 [Terms of Service](https://asg017.github.io/Projects/TritonFind/terms.html), 
