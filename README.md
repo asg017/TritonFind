@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # TritonFind 
 A Messenger Bot that assists UC San Diego students in getting their lost items back.
 Created by Alex Garcia.
@@ -355,4 +353,3 @@ of people who helped me test TritonFind:
 7. Sai Samudrala (friend)
 8. Tad Tiri (no idea who this guy is)
 9. About a dozen other people who tested it out during a soft opening
->>>>>>> 504e267ff650a7645650deea6b1b3d7c7e82518a
